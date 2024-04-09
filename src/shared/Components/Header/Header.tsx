@@ -1,6 +1,8 @@
+import { CHeader } from "./Header.styles";
+
 const Header = () => {
   return (
-    <header>
+    <CHeader>
       <h1>
         Busca do saber
       </h1>
@@ -18,7 +20,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </CHeader>
   )
 }
 
