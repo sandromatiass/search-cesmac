@@ -33,3 +33,7 @@ export const CSearch = styled.div`
     border: none;
   }
 `
+
+export const RSearch = styled.div `
+  
+`

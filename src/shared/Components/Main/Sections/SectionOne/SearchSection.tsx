@@ -1,4 +1,4 @@
-import { CMain, CSearch } from "./SearchSection.styles";
+import { CMain, CSearch, RSearch } from "./SearchSection.styles";
 
 const SearchSection = () =>{
   return (
@@ -6,11 +6,15 @@ const SearchSection = () =>{
       <CSearch>
         <h2>Faça Aqui sua Pesquisa</h2>
         <p>Arquitetura e Organização de Computadores e Sistemas Operacionais</p>
-        <input type="text" placeholder="Faça sua Pesquisa..."/>
+        <input type="search" placeholder="Faça sua Pesquisa..."/>
         <button type="submit">
           Buscar
         </button>
       </CSearch>
+
+      <RSearch>
+        
+      </RSearch>
     </CMain>
   )
 }
