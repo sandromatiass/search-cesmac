@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CContent, CMain, CSearch, RSearch } from "./SearchSection.styles";
+import { CButtons, CContent, CMain, CSearch, RSearch } from "./SearchSection.styles";
 import dataContent from "./data/data.json";
 
 interface SubThemes {
@@ -68,12 +68,15 @@ const SearchSection = () => {
             }
           }}
         />
-        <button type="button" onClick={handleSearch}>
-          Buscar
-        </button>
-        <button type="button" onClick={clearSearch}>
-          Limpar Pesquisa
-        </button>
+        <CButtons>
+          <button type="button" onClick={handleSearch}>
+            Buscar
+          </button>
+          <button type="button" onClick={clearSearch}>
+            Limpar Pesquisa
+          </button>
+        </CButtons>
+        
       </CSearch>
 
       <RSearch>

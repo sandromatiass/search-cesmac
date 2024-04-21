@@ -2,9 +2,9 @@ import { CFooter } from "./Footer.styles";
 
 const Footer = () => {
   return (
-   <CFooter>
+  <CFooter>
     <p> &copy; Equipe Power Cesmac - Análise e desenvolvimento de sistema </p>
-   </CFooter>
+  </CFooter>
   )
 }
 
