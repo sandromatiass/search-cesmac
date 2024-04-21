@@ -37,3 +37,45 @@ export const ConclusionParagraph = styled.p`
   margin-top: 2rem;
 `;
 
+export const TeamMembersContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1.2rem;
+  
+  p {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1em; 
+    color: #ffffff;
+  }
+`;
+
+export const TeamMember = styled.div`
+  width: 150px;
+  text-align: center;
+`;
+
+export const TeamMemberImage = styled.img`
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.2);
+`;
+
+export const CollegeLogo = styled.img`
+  max-width: 200px;
+  margin-top: 20px;
+  padding-bottom: 3rem;
+  text-align: center;
+`;
+
+export const ContainerTeam = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+`
