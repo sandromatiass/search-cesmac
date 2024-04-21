@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <CHeader>
       <h1>
-        Busca do saber
+        Busca do saber - Cesmac
       </h1>
 
       <nav>

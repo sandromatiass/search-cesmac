@@ -5,13 +5,14 @@ import dataContent from "./data/data.json";
 interface SubThemes {
   title: string;
   content: string;
-  identification: string; 
+  theme: string;
 }
 
 const SearchSection = () => {
   const [search, setSearch] = useState<string>("");
   const [searchResult, setSearchResults] = useState<SubThemes[]>([]);
   const [searchNotFound, setSearchNotFound] = useState<boolean>(false);
+  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
 
   const handleSearch = () => {
     setSearchNotFound(false);
@@ -34,23 +35,29 @@ const SearchSection = () => {
 
     if (results.length === 0) {
       setSearchNotFound(true);
-    };
+    }
 
     setSearchResults(
       results.map((item) => ({
         title: item.title || "",
         content: item.content,
-        identification: item.identification || "",
+        theme: item.theme || "",
       }))
     );
+  };
+
+  const toggleExpandedCard = (index: number) => {
+    if (expandedCardIndex === index) {
+      setExpandedCardIndex(null);
+    } else {
+      setExpandedCardIndex(index);
+    }
   };
 
   const clearSearch = () => {
     setSearch("");
     setSearchResults([]);
   };
-
-  console.log(search);
 
   return (
     <CMain>
@@ -76,7 +83,6 @@ const SearchSection = () => {
             Limpar Pesquisa
           </button>
         </CButtons>
-        
       </CSearch>
 
       <RSearch>
@@ -86,12 +92,33 @@ const SearchSection = () => {
           </div>
         ) : (
           searchResult.map((item, index) => (
-            <CContent>
-              <div key={index}>
-                <h3>{item.title}</h3>
-                <p>{item.identification}</p>
-                <p>{item.content}</p>
-              </div>
+            <CContent
+              key={index}
+              onClick={() => toggleExpandedCard(index)}
+              $Expanded={expandedCardIndex === index}
+            >
+              <a>
+                  <h3>{item.theme}</h3>
+                  {expandedCardIndex === index && (
+                  <button
+                    onClick={() => {
+                      toggleExpandedCard(index);
+                    }}
+                  >
+                    X
+                  </button>
+                  )}
+                <p className="identification">
+                  <strong>Assunto:</strong> {item.title}
+                </p>
+                <p>
+                  {expandedCardIndex === index ? item.content : `${item.content.slice(0, 200)}...`}
+                  {expandedCardIndex === index && item.content.length > 200 && (
+                    <button onClick={() => toggleExpandedCard(index)}>X</button>
+                  )}
+                </p>
+              </a>
+              
             </CContent>
           ))
         )}

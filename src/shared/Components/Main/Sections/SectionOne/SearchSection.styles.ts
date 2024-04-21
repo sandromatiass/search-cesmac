@@ -5,7 +5,8 @@ export const CMain = styled.main`
   background-color: #262625;
   color: #ffffff;
   width: 100%;
-  height: 42rem;
+  height: auto;
+  margin-bottom: 5rem;
 `
 
 export const CSearch = styled.div`
@@ -45,7 +46,6 @@ export const CSearch = styled.div`
   input:focus::placeholder{
     color: #ffffff;
   }
-
 `
 
 export const RSearch = styled.div `
@@ -56,13 +56,65 @@ export const RSearch = styled.div `
   gap: 1.2rem;
 `
 
-export const CContent = styled.div `
+export const CContent = styled.div<{ $Expanded: boolean }>`
   background-color: #72736E;
-  border: solid 1px;
-
   width: 20rem;
-  height: 10rem;
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+  position: ${({ $Expanded }) => ($Expanded ? 'fixed' : 'initial')};
+  top: 39%;
+  left: 50%;
+  transform: ${({ $Expanded }) => ($Expanded ? 'translate(-50%, -50%)' : 'none')};
+  z-index: ${({ $Expanded }) => ($Expanded ? '999' : 'auto')};
+  width: ${({ $Expanded }) => ($Expanded ? '50%' : '20rem')}; 
+  max-height: ${({ $Expanded }) => ($Expanded ? '80vh' : 'none')};
+  border:  ${({ $Expanded }) => ($Expanded ? 'solid #F29F05' : 'yellow')};
+  overflow-y: auto;
+
+  
+
+  .identification {
+    color: #ffffff;
+    padding: 0.5rem;
+
+    strong {
+      color: #F29F05;
+      font-weight: bolder;
+    }
+  }
+
+  div {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    padding: 0.2rem;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  a {
+    button{
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      color: #F29F05;
+      background-color: #6833A3;
+    }
+  }
 `
+
 export const CButtons = styled.div`
   display: flex;
   justify-content: center;
