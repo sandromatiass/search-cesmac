@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Projeto de Pesquisa com React, TypeScript e Styled Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma ferramenta de pesquisa dinâmica desenvolvida como parte do módulo 5 do curso de Análise e Desenvolvimento de Sistemas do CESMAC. Ele permite explorar temas relacionados aos sistemas operacionais e à arquitetura e organização de computadores.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Styled Components
 
-## Expanding the ESLint configuration
+## Funcionalidades Principais
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Pesquisa dinâmica: os usuários podem inserir termos de pesquisa e visualizar resultados relacionados aos temas abordados no curso.
+- Exibição de conteúdo: os resultados da pesquisa são apresentados de forma clara e organizada.
+- Interatividade: os usuários podem expandir os cards de resultado para lerem mais conteúdo.
 
-- Configure the top-level `parserOptions` property like this:
+## Armazenamento de Dados
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Os dados utilizados para alimentar o conteúdo da pesquisa foram armazenados em um arquivo JSON, facilitando a manutenção e atualização dos dados, além de simplificar o processo de integração com a aplicação React.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Link do Projeto
+
+Você pode acessar o projeto em produção no Vercel através do seguinte link:
+
+[Search CESMAC](https://search-cesmac.vercel.app/)
+
+## Autor
+
+[Seu Nome]
+
+---
+
+**Nota:** Este projeto foi desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas do CESMAC. Todo o conteúdo e funcionalidades são propriedade intelectual dos desenvolvedores e do CESMAC. Você é livre para utilizar o código deste projeto para fins educacionais e não comerciais.
