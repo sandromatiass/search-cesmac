@@ -50,23 +50,28 @@
         },
         {
           "title": "Sistemas Operacionais Distribuídos",
-          "content": "Visão geral dos sistemas operacionais distribuídos, incluindo arquiteturas, modelos de comunicação, tolerância a falhas e escalabilidade."
+          "content": "Visão geral dos sistemas operacionais distribuídos, incluindo arquiteturas, modelos de comunicação, tolerância a falhas e escalabilidade.",
+          "identification": "Sistemas Operacionais"
         },
         {
           "title": "Termos Técnicos em Sistemas Operacionais",
-          "content": "Explicação de termos técnicos comuns em sistemas operacionais, como escalonamento de processos, swapping, paginção, entre outros."
+          "content": "Explicação de termos técnicos comuns em sistemas operacionais, como escalonamento de processos, swapping, paginção, entre outros.",
+          "identification": "Sistemas Operacionais"
         },
         {
           "title": "Comparação entre Sistemas Operacionais",
-          "content": "Análise comparativa de diferentes sistemas operacionais, incluindo critérios como desempenho, segurança, usabilidade e suporte a hardware."
+          "content": "Análise comparativa de diferentes sistemas operacionais, incluindo critérios como desempenho, segurança, usabilidade e suporte a hardware.",
+          "identification": "Sistemas Operacionais"
         },
         {
           "title": "Como Escolher um Sistema Operacional",
-          "content": "Guia prático para escolher um sistema operacional adequado às necessidades específicas, considerando fatores como propósito de uso, compatibilidade de software, requisitos de hardware, preferências pessoais e suporte."
+          "content": "Guia prático para escolher um sistema operacional adequado às necessidades específicas, considerando fatores como propósito de uso, compatibilidade de software, requisitos de hardware, preferências pessoais e suporte.",
+          "identification": "Sistemas Operacionais"
         },
         {
           "title": "Processos e Microprocessos",
-          "content": "Explicação sobre processos e microprocessos nos sistemas operacionais, incluindo definições, diferenças, ciclo de vida, escalonamento, comunicação entre processos e gerenciamento de recursos."
+          "content": "Explicação sobre processos e microprocessos nos sistemas operacionais, incluindo definições, diferenças, ciclo de vida, escalonamento, comunicação entre processos e gerenciamento de recursos.",
+          "identification": "Sistemas Operacionais"
         }
       ]
     },
@@ -75,35 +80,43 @@
       "subthemes": [
         {
           "title": "Arquitetura RISC e CISC",
-          "content": "Comparação entre as arquiteturas Reduced Instruction Set Computing (RISC) e Complex Instruction Set Computing (CISC), abordando suas características, vantagens e desvantagens."
+          "content": "Comparação entre as arquiteturas Reduced Instruction Set Computing (RISC) e Complex Instruction Set Computing (CISC), abordando suas características, vantagens e desvantagens.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquitetura de Sistemas Embarcados",
-          "content": "Discussão sobre a arquitetura de sistemas embarcados, incluindo processadores, memória, periféricos e sistemas operacionais utilizados em dispositivos embarcados."
+          "content": "Discussão sobre a arquitetura de sistemas embarcados, incluindo processadores, memória, periféricos e sistemas operacionais utilizados em dispositivos embarcados.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquitetura de Redes de Computadores",
-          "content": "Visão geral da arquitetura de redes de computadores, incluindo modelos de referência, protocolos de comunicação, topologias de rede e tecnologias de interconexão."
+          "content": "Visão geral da arquitetura de redes de computadores, incluindo modelos de referência, protocolos de comunicação, topologias de rede e tecnologias de interconexão.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquiteturas de GPU",
-          "content": "Exploração das arquiteturas de Unidades de Processamento Gráfico (GPU), incluindo sua organização interna, pipeline de renderização, processamento paralelo e aplicativos."
+          "content": "Exploração das arquiteturas de Unidades de Processamento Gráfico (GPU), incluindo sua organização interna, pipeline de renderização, processamento paralelo e aplicativos.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquitetura de Sistemas de Armazenamento",
-          "content": "Discussão sobre a arquitetura de sistemas de armazenamento, incluindo discos rígidos, unidades de estado sólido (SSD), RAID, sistemas de arquivos e tecnologias de armazenamento em nuvem."
+          "content": "Discussão sobre a arquitetura de sistemas de armazenamento, incluindo discos rígidos, unidades de estado sólido (SSD), RAID, sistemas de arquivos e tecnologias de armazenamento em nuvem.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquitetura de Computadores Quânticos",
-          "content": "Introdução à arquitetura de computadores quânticos, incluindo qubits, portas quânticas, algoritmos quânticos e desafios na construção de computadores quânticos escaláveis."
+          "content": "Introdução à arquitetura de computadores quânticos, incluindo qubits, portas quânticas, algoritmos quânticos e desafios na construção de computadores quânticos escaláveis.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquiteturas de Computação Neuromórfica",
-          "content": "Visão geral das arquiteturas de computação neuromórfica, inspiradas no funcionamento do cérebro humano, incluindo redes neurais artificiais, sinapses artificiais e aplicações em inteligência artificial."
+          "content": "Visão geral das arquiteturas de computação neuromórfica, inspiradas no funcionamento do cérebro humano, incluindo redes neurais artificiais, sinapses artificiais e aplicações em inteligência artificial.",
+          "identification": "Arquitetura e Organização de Computadores"
         },
         {
           "title": "Arquitetura de Computadores Sustentáveis",
-          "content": "Discussão sobre a arquitetura de computadores sustentáveis, incluindo eficiência energética, materiais recicláveis, redução de resíduos eletrônicos e impacto ambiental."
+          "content": "Discussão sobre a arquitetura de computadores sustentáveis, incluindo eficiência energética, materiais recicláveis, redução de resíduos eletrônicos e impacto ambiental.",
+          "identification": "Arquitetura e Organização de Computadores"
         }
       ]
     }

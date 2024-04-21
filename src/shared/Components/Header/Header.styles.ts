@@ -5,8 +5,9 @@ export const CHeader = styled.header `
   justify-content: space-between;
   padding: 1rem;
   
-  background: #0076B6;
+  background: #010D00;
   font-family: "Tilt Neon", sans-serif;
+  color: #ffffff;
 
   nav ul {
     display: flex;
@@ -14,7 +15,7 @@ export const CHeader = styled.header `
     font-size: 1.2em;
     
     :hover {
-      color: #FFE519;
+      color: #ffffff;
       text-decoration: underline;
     }
   }

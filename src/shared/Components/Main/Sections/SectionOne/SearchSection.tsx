@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CMain, CSearch, RSearch } from "./SearchSection.styles";
+import { CContent, CMain, CSearch, RSearch } from "./SearchSection.styles";
 import dataContent from "./data/data.json";
 
 interface SubThemes {
@@ -83,11 +83,13 @@ const SearchSection = () => {
           </div>
         ) : (
           searchResult.map((item, index) => (
-            <div key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.identification}</p>
-              <p>{item.content}</p>
-            </div>
+            <CContent>
+              <div key={index}>
+                <h3>{item.title}</h3>
+                <p>{item.identification}</p>
+                <p>{item.content}</p>
+              </div>
+            </CContent>
           ))
         )}
       </RSearch>

@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const CMain = styled.main`
   font-family: "Tilt Neon", sans-serif;
-  background-color: antiquewhite;
+  background-color: #262625;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
 `
 
 export const CSearch = styled.div`
@@ -18,7 +21,6 @@ export const CSearch = styled.div`
 
   h2{
     font-size: 2em;
-
   }
 
   p {
@@ -35,5 +37,17 @@ export const CSearch = styled.div`
 `
 
 export const RSearch = styled.div `
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1.2rem;
+`
+
+export const CContent = styled.div `
+  background-color: #72736E;
+  border: solid 1px;
+
+  width: 20rem;
+  height: 10rem;
 `
